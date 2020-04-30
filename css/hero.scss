@@ -1,0 +1,88 @@
+@import 'mixins', 'colors';
+
+.hero {
+   &__background {
+      position: absolute;
+      z-index: -1;
+      width: 330px;
+      left: -114px;
+      top: -21px;
+      opacity: 60%;
+      @media (min-width: 530px) {
+         width: 480px;
+         left: auto;
+         right: 5%;
+         top: 5%;
+      }
+      @media (min-width: 900px) {
+         width: 595px;
+         right: 7%;
+         top: 100px;
+         opacity: 100%;
+      }
+   }
+
+   &__status {
+      width: 100%;
+      margin-bottom: 10px;
+      color: $color-secondary-main;
+      @include Body3;
+      text-align: center;
+      @media (min-width: 530px) {
+         @include Body1;
+         text-align: left;
+      }  
+   }
+
+   &__title {
+      width: 100%;
+      margin-bottom: 15px;
+      @include H3;
+      text-align: center;
+      @media (min-width: 530px) {
+         width: 70%;
+         margin-bottom: 24px;
+         @include H2;
+         text-align: left;
+      }
+      @media (min-width: 900px) {
+         max-width: 545px;
+         @include H1;
+      }
+   }
+
+   &__text {
+      width: 100%;
+      @include Body4;
+      text-align: center;
+      margin-bottom: 40px;
+      @media (min-width: 530px) {
+         width: 70%;
+         max-width: 380px;
+         @include Body3;
+         text-align: left;
+      }
+   }
+
+   &__actions {
+      margin: 0 auto;
+      margin-bottom: 50px;
+      @media (min-width: 530px) {
+         margin-left: 0;
+         margin-bottom: 110px;
+      }
+   }
+   
+   &__button {
+      &_projects {
+         @include ButtonFilled($color-primary-main);
+         margin-right: 20px;
+         @media (max-width: 530px) {
+            display: none;
+         }
+      }
+      &_contacts {
+         @include ButtonFilled($color-secondary-main);
+      }
+   }
+}

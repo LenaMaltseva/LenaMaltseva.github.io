@@ -1,0 +1,143 @@
+.hero__background {
+  position: absolute;
+  z-index: -1;
+  width: 330px;
+  left: -114px;
+  top: -21px;
+  opacity: 60%;
+}
+
+@media (min-width: 530px) {
+  .hero__background {
+    width: 480px;
+    left: auto;
+    right: 5%;
+    top: 5%;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero__background {
+    width: 595px;
+    right: 7%;
+    top: 100px;
+    opacity: 100%;
+  }
+}
+
+.hero__status {
+  width: 100%;
+  margin-bottom: 10px;
+  color: #0054F8;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+@media (min-width: 530px) {
+  .hero__status {
+    font-weight: 300;
+    font-size: 24px;
+    text-align: left;
+  }
+}
+
+.hero__title {
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+}
+
+@media (min-width: 530px) {
+  .hero__title {
+    width: 70%;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero__title {
+    max-width: 545px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+  }
+}
+
+.hero__text {
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 530px) {
+  .hero__text {
+    width: 70%;
+    max-width: 380px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+}
+
+.hero__actions {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 530px) {
+  .hero__actions {
+    margin-left: 0;
+    margin-bottom: 110px;
+  }
+}
+
+.hero__button_projects {
+  height: 40px;
+  padding: 8px 25px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #525252;
+  -webkit-box-shadow: 0px 2px 5px #525252;
+          box-shadow: 0px 2px 5px #525252;
+  margin-right: 20px;
+}
+
+.hero__button_projects:hover {
+  -webkit-box-shadow: 0px 1px 2px #525252;
+          box-shadow: 0px 1px 2px #525252;
+}
+
+@media (max-width: 530px) {
+  .hero__button_projects {
+    display: none;
+  }
+}
+
+.hero__button_contacts {
+  height: 40px;
+  padding: 8px 25px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #0054F8;
+  -webkit-box-shadow: 0px 2px 5px #0054F8;
+          box-shadow: 0px 2px 5px #0054F8;
+}
+
+.hero__button_contacts:hover {
+  -webkit-box-shadow: 0px 1px 2px #0054F8;
+          box-shadow: 0px 1px 2px #0054F8;
+}
+/*# sourceMappingURL=hero.css.map */

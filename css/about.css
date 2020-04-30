@@ -1,0 +1,91 @@
+.about__title {
+  color: #C2D7FE;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+@media (min-width: 660px) {
+  .about__title {
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.about__subtitle {
+  display: block;
+  width: 100%;
+  color: #0054F8;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+}
+
+@media (min-width: 660px) {
+  .about__subtitle {
+    margin: 0 0 40px 0;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+  }
+}
+
+.about__skills-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin-top: 30px;
+}
+
+@media (min-width: 660px) {
+  .about__skills-space {
+    width: 91%;
+    margin: 0 auto;
+    margin-bottom: 34px;
+  }
+}
+
+.about__skill {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  margin-bottom: 16px;
+}
+
+.about__skill_hard, .about__skill_soft {
+  margin-right: 24px;
+}
+
+@media (min-width: 660px) {
+  .about__skill {
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .about__skill_hard {
+    margin-right: 57px;
+  }
+  .about__skill_soft {
+    margin-right: 48px;
+  }
+}
+/*# sourceMappingURL=about.css.map */

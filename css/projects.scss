@@ -1,0 +1,94 @@
+@import 'mixins', 'colors';
+
+.projects {
+   background-color: $color-secondary-background;
+   &__title {
+      margin-bottom: 50px;
+      @include H3;
+      color: $color-secondary-light;
+      @media (min-width: 660px) {
+         margin-bottom: 80px;
+         @include H2;
+      }
+   }
+}
+
+.swiper-container {
+   width: 100%;
+}
+
+.project {
+   &__title {
+      display: flex;
+      justify-content: right;
+      align-items: baseline;
+      margin-bottom: 20px;
+   }
+
+   &__name {
+      display: block;
+      margin-right: 30px;
+      @include H3;
+      &_important {
+         color: $color-secondary-main;
+      }
+   }
+
+   &__devices {
+      @include Body3;
+   }
+
+   &__actions {
+      margin-bottom: 30px;
+   }
+
+   &__button {
+      &_heroku {
+         @media (max-width: 530px) {
+            display: none;
+         }
+         @include ButtonOutline($color-secondary-main);
+         margin-right: 20px;
+      }
+      &_github {
+         @include ButtonOutline($color-primary-main);
+      }
+   }
+
+   &__description {
+      margin-bottom: 60px;
+      @include Body4;
+      @media (min-width: 660px) {
+         @include Body3;
+      }
+   }
+
+   &__stack {
+      display: flex;
+      justify-content: start;
+      flex-flow: wrap;
+   }
+
+   &__tool {
+      display: block;
+      margin: 0 30px 4px 0;
+      @include Body2;
+      font-weight: bold;
+   }
+}
+
+.pagination {
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   &__bullet {
+      margin: 0 8px;
+      @include PaginationButton($color-primary-main);
+      &_active {
+         @include PaginationButton($color-secondary-main);
+         &:hover {
+            background-color: transparent;
+         }
+      }
+   }
+}
