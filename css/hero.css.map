@@ -4,7 +4,8 @@
     "sources": [
         "hero.scss",
         "_mixins.scss",
-        "_colors.scss"
+        "_colors.scss",
+        "_breakpoints.scss"
     ],
     "names": [],
     "file": "hero.css"

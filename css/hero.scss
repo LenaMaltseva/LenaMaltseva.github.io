@@ -1,4 +1,4 @@
-@import 'mixins', 'colors';
+@import 'mixins', 'colors', 'breakpoints';
 
 .hero {
    &__background {
@@ -8,13 +8,13 @@
       left: -114px;
       top: -21px;
       opacity: 60%;
-      @media (min-width: 530px) {
+      @media (min-width: $breakpoint-sm) {
          width: 480px;
          left: auto;
          right: 5%;
          top: 5%;
       }
-      @media (min-width: 900px) {
+      @media (min-width: $breakpoint-lg) {
          width: 595px;
          right: 7%;
          top: 100px;
@@ -28,7 +28,7 @@
       color: $color-secondary-main;
       @include Body3;
       text-align: center;
-      @media (min-width: 530px) {
+      @media (min-width: $breakpoint-sm) {
          @include Body1;
          text-align: left;
       }  
@@ -39,13 +39,13 @@
       margin-bottom: 15px;
       @include H3;
       text-align: center;
-      @media (min-width: 530px) {
+      @media (min-width: $breakpoint-sm) {
          width: 70%;
          margin-bottom: 24px;
          @include H2;
          text-align: left;
       }
-      @media (min-width: 900px) {
+      @media (min-width: $breakpoint-lg) {
          max-width: 545px;
          @include H1;
       }
@@ -56,7 +56,7 @@
       @include Body4;
       text-align: center;
       margin-bottom: 40px;
-      @media (min-width: 530px) {
+      @media (min-width: $breakpoint-sm) {
          width: 70%;
          max-width: 380px;
          @include Body3;
@@ -67,7 +67,7 @@
    &__actions {
       margin: 0 auto;
       margin-bottom: 50px;
-      @media (min-width: 530px) {
+      @media (min-width: $breakpoint-sm) {
          margin-left: 0;
          margin-bottom: 110px;
       }
@@ -77,7 +77,7 @@
       &_projects {
          @include ButtonFilled($color-primary-main);
          margin-right: 20px;
-         @media (max-width: 530px) {
+         @media (max-width: $breakpoint-sm) {
             display: none;
          }
       }

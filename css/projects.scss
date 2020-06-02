@@ -1,4 +1,4 @@
-@import 'mixins', 'colors';
+@import 'mixins', 'colors', 'breakpoints';
 
 .projects {
    background-color: $color-secondary-background;
@@ -6,7 +6,7 @@
       margin-bottom: 50px;
       @include H3;
       color: $color-secondary-light;
-      @media (min-width: 660px) {
+      @media (min-width: $breakpoint-md) {
          margin-bottom: 80px;
          @include H2;
       }
@@ -43,7 +43,7 @@
 
    &__button {
       &_heroku {
-         @media (max-width: 530px) {
+         @media (max-width: $breakpoint-sm) {
             display: none;
          }
          @include ButtonOutline($color-secondary-main);
@@ -57,7 +57,7 @@
    &__description {
       margin-bottom: 60px;
       @include Body4;
-      @media (min-width: 660px) {
+      @media (min-width: $breakpoint-md) {
          @include Body3;
       }
    }

@@ -1,4 +1,4 @@
-@import 'mixins', 'colors';
+@import 'mixins', 'colors', 'breakpoints';
 @import 'hero', 'projects', 'about', 'contacts';
 
 * {
@@ -46,7 +46,7 @@ a {
             fill: $color-secondary-main;
          }
       }
-      @media (min-width: 530px) {
+      @media (min-width: $breakpoint-sm) {
          margin: 0 auto 300px 0;
       }
       @media (min-width: 990px) {
@@ -58,7 +58,7 @@ a {
       .social__icon {
          fill: $color-white;
       }
-      @media (max-width: 660px) {
+      @media (max-width: $breakpoint-md) {
          width: auto;
          margin: 0 auto;
          .social__link {
