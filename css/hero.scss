@@ -1,6 +1,7 @@
 @import 'mixins', 'colors', 'breakpoints';
 
 .hero {
+   position: relative;
    &__background {
       position: absolute;
       z-index: -1;
@@ -16,7 +17,7 @@
       }
       @media (min-width: $breakpoint-lg) {
          width: 595px;
-         right: 7%;
+         right: 0;
          top: 100px;
          opacity: 100%;
       }
